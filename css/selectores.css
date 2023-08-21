@@ -1,0 +1,96 @@
+/* SELECTORES POR TAG O ETIQUETA */
+
+a {
+  color: rgb(0, 105, 18);
+}
+
+span {
+  background-color: skyblue;
+}
+
+/* SELECTORES POR CLASE  */
+.red {
+  color: #f33;
+}
+
+.yellow-bg {
+  background: #ffa;
+}
+
+.fancy {
+  font-weight: bold;
+
+  text-shadow: 4px 4px 3px #77f;
+}
+
+/* SELECTORES POR ID */
+
+#demo {
+  border: red 2px solid;
+}
+
+#confondo {
+  color: white;
+  background-color: rgb(33, 11, 199);
+}
+
+/* SELECTOR UNIVERSAL ASTERISCO */
+
+* [lang^="en"] {
+  color: green;
+}
+
+*.warning {
+  color: red;
+}
+
+*#maincontent {
+  border: 1px solid blue;
+}
+
+/* SELECTORES DE ATRIBUTOS */
+
+a {
+  color: black;
+}
+
+/* Links internos que comienzan con "#" */
+
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Links con "ejemplo" en la URL */
+
+a[href*="ejemplo"] {
+  background-color: silver;
+}
+
+/* link con la palabra "sinmayusculas"en la URL,
+  
+  sin chequear mayúsculas */
+
+a[href*="sinmayusculas" i] {
+  color: rgb(234, 0, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* link con la palabra "ConMAyusculas"en la URL,
+  
+  con chequeo de mayúsculas */
+
+a[href*="ConMAyusculas"] {
+  color: orange;
+}
+
+/* Links que terminen en ".org" */
+
+a[href$=".org"] {
+  color: red;
+}
+
+/* Links que comienzan con "https" y terminan en ".org" */
+
+a[href^="https"][href$=".org"] {
+  color: green;
+}
